@@ -85,10 +85,8 @@ public:
 	 * Добавление элемента в очередь
 	 * Реализуется через siftUp
 	 */
-	T push()
+	T push(int i)
 	{
-		int i;
-		std::cin >> i;
 		hT.resize(hT.size() + 1);
 		hT.push_back(i);
 		_siftUp(hT.size());
