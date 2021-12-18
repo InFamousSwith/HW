@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
         std::ifstream file;
         file.open(argv[1]);
         if (!file.is_open()) {
-            std::cout << "ERROR: не удалось открыть файл!" << std::endl;
+            std::cout << "ERROR: File not open" << std::endl;
         }
         else {
             file >> a;
